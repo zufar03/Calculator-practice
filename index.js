@@ -4,6 +4,9 @@ function numCatch(a) {
 }
 function barobar() {
     let r = document.getElementById("text");
+    if (r.value === "") {
+      r.value = "0"
+    }
     r.value = eval(r.value)
 }
 function reset() {
